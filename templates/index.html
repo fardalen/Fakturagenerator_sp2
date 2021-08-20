@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="header">
+    <div class="image">
+        <img src="../static/image.png">
+    </div>
+      <div class="inner_header">
+
+          <div class = "navbar">
+              <a class="nav__item" href="/">Home</a>
+              <a class="nav__item" href="/login">Login</a>
+              <a class="nav__item" href="/newuser">Registrering</a>
+          </div>
+      </div>
+  </header>
+<div class="bakgrunn">
+<div class="innhold">
+<form class="form__wrapper" method="post">
+    <h1>Velkommen til ConsultAS</h1>
+    <label>vi er er konsuleringsfirma som tilbyr tjenester som</label>
+    <label>- Implentasjon av liten nettverksarkitektur </label>
+    <label>- Implentasjon av middels nettverksarkitektur</label>
+    <label>- Implentasjon av stor nettverksarkitektur</label>
+    <label>- Alarm og signalanlegg</label>
+
+</form>
+
+</div>
+</div>
+
+<footer class="footer">
+    <div class="footercontent">
+    <p class="footertxt">Copyright 1999-2021 by ConsultAS. All Rights Reserved.</p>
+        <div class="image_footer">
+        <img src="../static/image.png">
+        </div>
+        </div>
+</footer>
+
+</body>
+
+</html>

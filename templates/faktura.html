@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>faktura</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="header">
+    <div class="image">
+        <img src="../static/image.png">
+    </div>
+      <div class="inner_header">
+
+          <div class = "navbar">
+              <a class="nav__item" href="/faktura">Legg til faktura</a>
+              <a class="nav__item" href="/visfaktura">Vis faktura</a>
+              <a class="nav__item" href="/faktura/logout">Logout</a>
+          </div>
+      </div>
+  </header>
+
+  <div class="bakgrunn">
+<div class="innhold">
+<form class="form__wrapper" METHOD="post">
+    <label>logga inn som {{username}}</label>
+  <h1>Generer ein faktura</h1>
+    <label>Skriv inn Kundens namn</label>
+    <input class="input" type="text" name="Kunde_namn" required>
+    <label>Skriv inn Kundens epost</label>
+    <input class="input" type="email" name="Kunde_epost" required>
+    <label>Skriv inn Kundens Adresse</label>
+    <input class="input" type="text" name="Kundeadresse" required>
+    <label>Skriv inn Kundens postnummer</label>
+    <input class="input" type="text" name="kundens_postnr" required>
+    <label>Skriv inn Kundens by</label>
+    <input class="input" type="text" name="kundens_by" required>
+    <label>Velg tjeneste</label>
+    <select class= "select" name = "tjeneste">
+        <option value ="1">Implentasjon liten nettverksarkitektur</option>
+        <option value="2">Implentasjon middels nettverksarkitektur</option>
+        <option value="3">Implentasjon stor nettverksarkitektur</option>
+        <option value="4">Alarm og signalanlegg</option>
+    </select>
+    <label>Skriv inn timer brukt på jobb</label>
+    <input class="input" type="text" name="Timerbrukt" required>
+    <label>Velg matrial brukt</label>
+    <select class= "select" name="Matrial">
+        <option value="1">Liten nettverks pakke</option>
+        <option value="2">Middels nettverks pakke</option>
+        <option value="3">Stor nettverks pakke</option>
+        <option value="4">Betjeningsanlegg</option>
+        <option value="5" name="Ingen">Ingen</option>
+    </select>
+
+    <input class="submit_btn" type="submit" name="submit" value="Send inn"/><br/>
+    <div class="msg">{{txt}}</div>
+</form>
+</div>
+  </div>
+<footer class="footer">
+    <div class="footercontent">
+    <p class="footertxt">Copyright 1999-2021 by ConsultAS. All Rights Reserved.</p>
+        <div class="image_footer">
+        <img src="../static/image.png">
+        </div>
+        </div>
+</footer>
+</body>
+</html>

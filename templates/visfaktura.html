@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faktura{{id}}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="header">
+    <div class="image">
+        <img src="../static/image.png">
+    </div>
+      <div class="inner_header">
+
+          <div class = "navbar">
+              <a class="nav__item" href="/faktura">Legg til faktura</a>
+              <a class="nav__item" href="/faktura/displaylast">Vis faktura</a>
+              <a class="nav__item" href="/faktura/logout">Logout</a>
+          </div>
+      </div>
+  </header>
+  <div class="bakgrunn">
+      <div class="innholdpdf">
+<form class="form__wrapperpdf" method="post">
+  <h1>Vis ein faktura</h1>
+    <label>Skriv inn faktura nummeret til fakturaen du vil vise</label>
+    <input class="input" type="text" name="faktura_nummer" required>
+    <input class="submit_pdf" type="submit" name="submit" value="Vis">
+    <div class="msg">{{txt}}</div>
+    <div class="pdf">
+    <embed src="../static/faktura{{id}}.pdf">
+</div>
+
+
+</form>
+</div>
+  </div>
+<footer class="footer">
+    <div class="footercontent">
+    <p class="footertxt">Copyright 1999-2021 by ConsultAS. All Rights Reserved.</p>
+        <div class="image_footer">
+        <img src="../static/image.png">
+        </div>
+        </div>
+</footer>
+</body>
+</html>

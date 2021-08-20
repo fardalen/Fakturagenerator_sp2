@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<header class="header">
+  <div class="image">
+      <img src="../static/image.png">
+  </div>
+    <div class="inner_header">
+
+        <div class = "navbar">
+            <a class="nav__item" href="/">Home</a>
+            <a class="nav__item" href="/login">Login</a>
+            <a class="nav__item" href="/newuser">Registrering</a>
+        </div>
+    </div>
+</header>
+<div class="bakgrunn">
+<div class="innhold">
+<form class="form__wrapper" METHOD="post">
+    <h1>Login</h1>
+    <p class="form_info"> Login for å nytte funksjonene i applikasjonen</p>
+
+    Username: <input class="input" placeholder="Username" type="text" name="username" required>
+    Password: <input class="input" placeholder="Password" type="password" name="password" required>
+
+    <input class="submit_btn" type="submit" name="Logginn" value="Logg inn"/>
+    <div class="msg">{{txt}}</div>
+
+
+    <label>Ny bruker? Registrer her:</label>
+    <a href="/newuser">Ny bruker</a>
+
+</form>
+</div>
+</div>
+<footer class="footer">
+    <p class="footertxt">Copyright 1999-2021 by ConsultAS. All Rights Reserved.</p>
+        <div class="image_footer">
+        <img src="../static/image.png">
+        </div>
+</footer>
+</body>
+</html>

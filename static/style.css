@@ -1,0 +1,197 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+.bakgrunn{
+  background-color: #063970;
+  background-image: url("../static/framsidebilde.jpg");
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+}
+form.form__wrapper {
+display: flex;
+flex-direction: column;
+padding: 2rem;
+width: 60%;
+background-color: #ffffff;
+justify-content: center;
+margin: 5rem auto;
+opacity: 0.9;
+border-radius: 5px;
+}
+
+div.innhold {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  flex-direction: row;
+  border-radius: 5px;
+
+}
+
+
+header.header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #b3a08f;
+}
+
+input.input{
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid black;
+  padding: 0.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+
+}
+
+.form_info{
+margin-bottom: 1rem;
+margin-top: 0.5rem;
+}
+
+.submit_btn{
+  background-color: #063970;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0.3rem;
+}
+
+div.inner_header{
+width: 40%;
+height: 100px;
+display: flex;
+margin-top: 1rem;
+}
+
+div.image{
+  width: 50%;
+}
+div.image img{
+  width: 100px;
+  height: 90px;
+  object-position: 5px 10%;
+
+}
+
+
+div.inner_header div.navbar {
+    order: 0;
+    padding-top: 1rem;
+    padding-left: 7rem;
+}
+
+div.inner_header div.navbar a{
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+.nav__item:hover{
+  border-bottom: 1px solid red;
+}
+.msg {
+color: red;
+}
+
+h1, label {
+font-family: "open sans", sans-serif;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+p{
+font-family: "open sans", sans-serif;
+}
+
+
+.select{
+  width: 103%;
+  border-radius: 7px;
+  border: 1px solid black;
+  padding: 0.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.radiobutton1{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.radiobutton2{
+
+  margin-bottom: 1rem;
+}
+.radiolable{
+font-family: "Roboto", sans-serif;
+font-weight: normal;
+font-size: 14px;
+}
+
+form.form__wrapperpdf {
+display: flex;
+flex-direction: column;
+padding: 2rem;
+width: 70%;
+background-color: #ffffff;
+justify-content: center;
+margin: 5rem auto;
+opacity: 0.9;
+border-radius: 5px;
+}
+
+div.innholdpdf {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  flex-direction: row;
+  border-radius: 5px;
+}
+.submit_pdf{
+  background-color: #063970;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  width: 25%;
+}
+
+div.pdf{
+width: 100%;
+}
+
+embed {
+margin-top: 1rem;
+width: 100%;
+height: 100vh;
+border: 1px solid #555;
+}
+
+footer.footer {
+width: 100%;
+background-color: #b3a08f;
+height: 137px;
+text-align: center;
+position: relative;
+}
+.footercontent {
+position: inherit;
+}
+.image_footer img{
+  width: 80px;
+  height: 78px;
+}
+.footertxt {
+padding: 1rem;
+}
+

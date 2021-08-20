@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrering</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="header">
+    <div class="image">
+        <img src="../static/image.png">
+    </div>
+      <div class="inner_header">
+
+          <div class = "navbar">
+              <a class="nav__item" href="/">Home</a>
+              <a class="nav__item" href="/login">Login</a>
+              <a class="nav__item" href="/newuser">Registrering</a>
+          </div>
+      </div>
+  </header>
+<div class="bakgrunn">
+<div class="innhold">
+<form class="form__wrapper" method="post">
+  <h1> Registrer deg </h1>
+
+  AnsattID:<input class="input" placeholder="AnsattID" type="text" name="tilsettid" required>
+  Epost: <input class="input" placeholder="Epost" type="text" name="epost" required>
+  Passord: <input class="input" placeholder="Passord" type="password" name="nytt_passord" required><br>
+
+  <input type="submit" class="submit_btn" name="registrer" value="Registrer" >
+    <div class="msg">{{msg}}</div>
+<a href="/">Tilbake</a>
+</form>
+
+</div>
+</div>
+
+<footer class="footer">
+    <div class="footercontent">
+    <p class="footertxt">Copyright 1999-2021 by ConsultAS. All Rights Reserved.</p>
+        <div class="image_footer">
+        <img src="../static/image.png">
+        </div>
+        </div>
+</footer>
+
+</body>
+</html>
